@@ -17,7 +17,7 @@
 syntax = "proto2";
 package dnstap;
 
-option go_package = "github.com/dmachard/go-dnstap-protobuf";
+option go_package = "github.com/dmachard/go-dnstap-protobuf;dnstap";
 
 // "Dnstap": this is the top-level dnstap type, which is a "union" type that
 // contains other kinds of dnstap payloads, although currently only one type

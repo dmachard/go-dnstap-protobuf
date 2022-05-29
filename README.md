@@ -98,7 +98,7 @@ unzip protoc-$PROTOC_VER-linux-x86_64.zip
 Edit and past the following line in the dnsmessage.proto
 
 ```bash
-option go_package = "github.com/dmachard/go-dnstap-protobuf";
+option go_package = "github.com/dmachard/go-dnstap-protobuf;dnstap";
 ```
 
 Export GOBIN
