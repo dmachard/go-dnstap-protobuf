@@ -91,9 +91,9 @@ wget https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto
 go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
 go get google.golang.org/protobuf@v1.28.1
 go mod tidy
-go mod edit -go=1.18
+go mod edit -go=1.20
 
-export PROTOC_VER=21.5
+export PROTOC_VER=21.12
 export GITHUB_URL=https://github.com/protocolbuffers
 wget $GITHUB_URL/protobuf/releases/download/v$PROTOC_VER/protoc-$PROTOC_VER-linux-x86_64.zip
 unzip protoc-$PROTOC_VER-linux-x86_64.zip
