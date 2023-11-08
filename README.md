@@ -1,7 +1,8 @@
 # go-dnstap-protobuf
 
 Dnstap Protocol Buffers encoder and decoder implementation in Golang.
-This library is based on the following [protocol buffers schema](https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto).
+This library is based on the following [protocol buffers schema](https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto) / https://github.com/dnstap/dnstap.pb .
+
 
 ## Installation
 
