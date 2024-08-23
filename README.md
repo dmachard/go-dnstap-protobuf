@@ -78,9 +78,9 @@ $ go test -bench=.
 goos: linux
 goarch: amd64
 pkg: github.com/dmachard/go-dnstap-protobuf
-cpu: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz
-BenchmarkUnmarshal-4     1324420               774.2 ns/op
-BenchmarkMarshal-4       1420527               825.9 ns/op
+cpu: AMD EPYC 7763 64-Core Processor                
+BenchmarkUnmarshal-4   	 2134670	       552.7 ns/op
+BenchmarkMarshal-4     	 1889336	       601.4 ns/op
 PASS
 ok      github.com/dmachard/go-dnstap-protobuf  4.596s
 ```
