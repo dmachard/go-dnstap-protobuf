@@ -21,7 +21,12 @@ jobs:
     - uses: actions/setup-go@v5
       with:
         go-version: ${{ matrix.go-version }}
-        
+
+    - name: edit go version
+      run: |
+        go mod edit -go=${{ matrix.go-version }}
+        go mod tidy 
+
     - name: Test
       run: go test -cover -v
 
