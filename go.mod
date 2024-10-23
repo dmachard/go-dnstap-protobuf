@@ -1,5 +1,5 @@
 module github.com/dmachard/go-dnstap-protobuf
 
-go 1.23
+go 1.21
 
 require google.golang.org/protobuf v1.35.1
