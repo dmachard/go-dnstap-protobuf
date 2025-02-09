@@ -94,21 +94,24 @@ Download some tools
 
 ```bash
 wget https://raw.githubusercontent.com/dnstap/dnstap.pb/master/dnstap.proto
-go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
-go get google.golang.org/protobuf@v1.34.2
-go mod edit -go=1.23
-go mod tidy
-
-export PROTOC_VER=28.1
-export GITHUB_URL=https://github.com/protocolbuffers
-wget $GITHUB_URL/protobuf/releases/download/v$PROTOC_VER/protoc-$PROTOC_VER-linux-x86_64.zip
-unzip protoc-$PROTOC_VER-linux-x86_64.zip
 ```
 
 Edit and past the following line in the dnsmessage.proto
 
 ```bash
 option go_package = "github.com/dmachard/go-dnstap-protobuf;dnstap";
+```
+
+Install protoc
+
+```bash
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+go mod tidy
+
+export PROTOC_VER=29.3
+export GITHUB_URL=https://github.com/protocolbuffers
+wget $GITHUB_URL/protobuf/releases/download/v$PROTOC_VER/protoc-$PROTOC_VER-linux-x86_64.zip
+unzip protoc-$PROTOC_VER-linux-x86_64.zip
 ```
 
 Generate protobuf file
